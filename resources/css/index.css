@@ -1,0 +1,124 @@
+/* Universal Styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+body {
+  font-size: 16px;
+  color: gray;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h2, h3 {
+  margin: 1rem 0;
+}
+h1, h2 {
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+.justify {
+  text-align: justify;
+}
+#main, #footer {
+  margin: 3rem 2rem;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Header*/
+#header-container {
+  height: 12.5rem;
+  width: 100%;
+}
+#nav {
+  background-image: url('../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+}
+#nav a {
+  color: white;
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+#nav a:hover {
+  text-decoration: none;
+}
+.flex-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main */
+#coffee-products {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.product {
+  width: 30%;
+  height: auto;
+  border: 0.1rem solid gray;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+.product img {
+  height: 70%;
+}
+
+/* Books */
+#books {
+  text-align: center;
+}
+#books li {
+  list-style: none;
+}
+
+/* Team */
+#team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.team-member {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: auto;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 0.1rem solid gray;
+  border-radius: 0.3rem;
+}
+.team-img-container {
+  width: 45%;
+}
+.team-role {
+  width: 45%;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+}
+#footer p {
+  margin: 1rem 0;
+}
