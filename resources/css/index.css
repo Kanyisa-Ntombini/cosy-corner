@@ -12,19 +12,16 @@ body {
   color: gray;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 2.8rem;
-}
-h3 {
   font-size: 2rem;
 }
-h2, h3 {
-  margin: 1rem 0;
+h3 {
+  font-size: 1rem;
 }
-h1, h2 {
-  text-align: center;
+ul li {
+  font-size: 0.75rem;
 }
 .center {
   text-align: center;
@@ -32,19 +29,19 @@ h1, h2 {
 .justify {
   text-align: justify;
 }
-#main, #footer {
-  margin: 3rem 2rem;
+#header, #main, #footer {
+  width: 96%;
+  margin: 0 1rem;
 }
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 /* Header*/
-#header-container {
+#header {
   height: 12.5rem;
-  width: 100%;
 }
 #nav {
   background-image: url('../images/banner.jpg');
@@ -55,8 +52,8 @@ img {
 }
 #nav a {
   color: white;
-  margin: 0 1rem;
-  font-size: 2rem;
+  font-size: 1.35rem;
+  padding: 0 1rem;
 }
 #nav a:hover {
   text-decoration: none;
@@ -64,24 +61,28 @@ img {
 .flex-banner {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex: 2;
+  flex-wrap: wrap;
 }
 
 /* Main */
+h2, h3 {
+  margin: 1rem 0;
+  text-align: center;
+}
 #coffee-products {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: space-evenly; 
+  flex-wrap: wrap;
 }
 .product {
   width: 30%;
-  height: auto;
   border: 0.1rem solid gray;
-  padding: 1rem;
-  flex-wrap: wrap;
 }
 .product img {
-  height: 70%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* Books */
@@ -103,7 +104,7 @@ img {
   justify-content: space-between;
   width: 50%;
   height: auto;
-  margin: 2rem 0;
+  margin: 1rem 0;
   padding: 1rem;
   border: 0.1rem solid gray;
   border-radius: 0.3rem;
@@ -113,6 +114,15 @@ img {
 }
 .team-role {
   width: 45%;
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.team-role p {
+  font-size: 0.75rem;
+  text-align: center;
 }
 
 /* Footer */
