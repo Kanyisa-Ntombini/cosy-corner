@@ -29,7 +29,7 @@ ul li {
 .justify {
   text-align: justify;
 }
-#header, #main, #footer {
+header, main, footer {
   width: 96%;
   margin: 0 1rem;
 }
@@ -40,22 +40,22 @@ img {
 }
 
 /* Header*/
-#header {
+header {
   height: 12.5rem;
 }
-#nav {
+nav {
   background-image: url('../images/banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 80%;
 }
-#nav a {
+nav a {
   color: white;
   font-size: 1.35rem;
   padding: 0 1rem;
 }
-#nav a:hover {
+nav a:hover {
   text-decoration: none;
 }
 .flex-banner {
@@ -67,6 +67,9 @@ img {
 }
 
 /* Main */
+#about h2 {
+  margin-top: 3rem;
+}
 h2, h3 {
   margin: 1rem 0;
   text-align: center;
@@ -79,6 +82,7 @@ h2, h3 {
 .product {
   width: 30%;
   border: 0.1rem solid gray;
+  padding-bottom: 1.5rem;
 }
 .product img {
   width: 50%;
@@ -126,9 +130,9 @@ h2, h3 {
 }
 
 /* Footer */
-#footer {
+footer {
   text-align: center;
 }
-#footer p {
+footer p {
   margin: 1rem 0;
 }
